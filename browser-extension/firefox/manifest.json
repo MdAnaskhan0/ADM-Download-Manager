@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "ADM - Send to Anas Download Manager",
+  "version": "1.0.0",
+  "description": "Send the current page URL to Anas Download Manager.",
+  "permissions": ["activeTab", "storage", "contextMenus", "http://127.0.0.1:43821/*"],
+  "browser_action": { "default_title": "Send to ADM", "default_popup": "popup.html" },
+  "background": { "scripts": ["background.js"] },
+  "options_ui": { "page": "options.html", "open_in_tab": true },
+  "applications": { "gecko": { "id": "adm@anas-download-manager.local", "strict_min_version": "109.0" } }
+}
